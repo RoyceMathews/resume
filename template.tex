@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	10pt, % Default font size is 11, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+%\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+%------------------------------------------------
+
+\name{Royce Mathews} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{Dallas, TX | (972) 854-8483 | mathewsr23@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	%\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
+    \textbf{Dell Technologies} \hfill {Remote} \\ 
+    AI Platform and Enterprise Solutions Research
+    
+    \begin{rSubsection}{Senior Software Engineer}{October 2022 - Present}{}{}
+        \item Scaled AI model management to support over 1.2 million daily requests by designing and leading the implementation of an AI Model Service Mesh across a multi-datacenter Kubernetes deployment, eliminating manual model entries and enabling automatic online/offline detection.
+        \item Led the redesign of the AI gateway's rate limiting feature to enable support for new models with zero code changes.
+        \item Reduced rate limit edit request tickets by 90\% by creating a UI that integrated with Grafana GPU Usage reporting, enabling non-technical managers to edit rate limits across hundreds of Dell projects and eliminating manual team effort.
+        \item Prototyped a RAG chatbot to improve internal knowledge sharing and documentation access; independently drove and championed AI integration efforts.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+    \textbf{JPMorgan Chase \& Co.} \hfill {Plano, TX} \\ 
+    Risk Forcasting ML
+    
+    \begin{rSubsection}{Machine Learning Engineer}{October 2021 - October 2022}{}{}
+		\item Performed early data analysis and worked with business analysts to understand and evaluate model
+output.
+		\item Worked with data scientists to productionize machine learning models.
+		\item Aggregated and transformed data for machine learning data pipelines.
+		\item Facilitated growth of junior team members with best practices, scoping, and learning new technologies.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+    \textbf{Motio, Inc.} \hfill {Plano, TX} \\ 
+    Business Intelligence Reporting Version Control
+    
+    \begin{rSubsection}{Software Engineer}{May 2016 - October 2021}{}{}
+        \item Boosted performance restoring old reports by 100\% by identifying and optimizing costly SQL queries.
+        \item Reduced login time from 2s to 40ms (98\% faster) by optimizing Single Page Application (SPA) resource loading.
+        \item Designed and prototyped delegated authentication, enabling Single Sign On into application regardless of authentication provider.
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{Expertise}
+
+    %Java, Python, Go, Javascript, SQL, React, Node.js, Kubernetes, Docker, Kafka, Spring, FastAPI, AWS (ECS, Lambda, S3)
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Languages \& Frameworks & Java, Python, Go, Javascript, SQL, Spring, FastAPI, React, Node.js \\
+		% Frameworks & Spring, FastAPI, React, Node.js \\
+		Technologies & Kubernetes, Docker, Kafka, AWS (ECS, Lambda, S3) \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	
+    \textbf{University of Texas at Dallas} \hfill {May 2017} \\ 
+    BS in Computer Science
+	
+\end{rSection}
+
+\begin{rSection}{Extracurricular}
+	
+    \textbf{ACM Industry Mentor - UT Dallas} \hfill {September 2023 - November 2024} \\ 
+    Worked with college students from the University of Texas at Dallas to provide them with industry insight as they
+develop their semester projects.
+
+    \textbf{Content Search Augmentation - JMPC Plano Hackathon Top 10} \hfill {} \\ 
+    Developed a service to scrape Confluence pages and generate vector embeddings with a machine learning model, improving search result accuracy.
+    
+    \textbf{RuneLite OpenSource Application - Release 1.5.1} \hfill {} \\ 
+    Collaborated in developer chat rooms to identify and scope new codebase issues, and implemented a simple enhancement to an existing plugin.
+	
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
