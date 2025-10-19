@@ -127,7 +127,8 @@
 	\medskip % Vertical whitespace
 	\hrule % Horizontal rule
 	\begin{list}{}{ % List to indent the entire content of the section
-		\setlength{\leftmargin}{1.5em} % Indent to the left of the list
+		%\setlength{\leftmargin}{1.5em} % Indent to the left of the list
+        \setlength{\leftmargin}{.75em} % Indent to the left of the list
 	}
 	\item[] % Empty list item to enable indentation
 }{
@@ -138,14 +139,21 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 parameters: company name, year(s) employed, job title and location
-	\textbf{#1} \hfill {#2} % Bold company name and date to the right
-	\ifthenelse{\equal{#3}{}}{}{ % If the third parameter is empty, don't output the job title and location line
-		\\ % Job title and location on a new line
-		\textit{#3} \hfill \textit{#4} % Output job title and location
-	}%
+\newenvironment{rSubsection}[2]{ % 4 parameters: company name, year(s) employed, job title and location
+	#1 \hfill {#2} % Bold company name and date to the right
 	\smallskip % Vertical whitespace
-	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+    %\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+	\begin{list}{$\cdot$}{\leftmargin=.75em} % \cdot used for bullets, no indentation
+		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+}{
+	\end{list}
+	\vspace{0.5em} % Vertical whitespace after the end of the list
+}
+
+\newenvironment{rSubsectionB}[2]{ % 4 parameters: company name, year(s) employed, job title and location
+	\textbf{#1} \hfill {#2} % Bold company name and date to the right
+	\smallskip % Vertical whitespace
+	\begin{list}{$\cdot$}{\leftmargin=.75em} % \cdot used for bullets, no indentation
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
 	\end{list}

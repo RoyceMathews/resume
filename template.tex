@@ -23,7 +23,7 @@
 
 \documentclass[
 	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	10pt, % Default font size is 11, can use 10pt, 11pt or 12pt
+	9pt, % Default font size is 11, can use 10pt, 11pt or 12pt
 ]{resume} % Use the resume class
 
 %\usepackage{ebgaramond} % Use the EB Garamond font
@@ -51,39 +51,57 @@
 \begin{rSection}{Experience}
 
 	%\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-    \textbf{Dell Technologies} \hfill {Remote} \\ 
-    AI Platform and Enterprise Solutions Research
-    
-    \begin{rSubsection}{Senior Software Engineer}{October 2022 - Present}{}{}
-        \item Scaled AI model management to support over 1.2 million daily requests by designing and leading the implementation of an AI Model Service Mesh across a multi-datacenter Kubernetes deployment, eliminating manual model entries and enabling automatic online/offline detection.
-        \item Led the redesign of the AI gateway's rate limiting feature to enable support for new models with zero code changes.
-        \item Reduced rate limit edit request tickets by 90\% by creating a UI that integrated with Grafana GPU Usage reporting, enabling non-technical managers to edit rate limits across hundreds of Dell projects and eliminating manual team effort.
-        \item Prototyped a RAG chatbot to improve internal knowledge sharing and documentation access; independently drove and championed AI integration efforts.
+    \textbf{Dell Technologies {\leftmargin=0em}} \hfill {Remote } \\
+    \textbf{Senior Software Engineer}
+    \begin{rSubsection}{AI Platform and Enterprise Solutions Research}{October 2022 - Present}
+        \item Scaled AI model management to support over \textbf{2M+ daily requests} by designing and leading the \\ implementation of an AI Model Service Mesh across a multi-datacenter Kubernetes deployment.
+        % This \textbf{eliminated manual model entries} and enabled automatic online/offline detection.
+        \item Led the redesign of the AI gateway’s rate limiting feature, achieving \textbf{no-code deployments} of new models.
+        \item Reduced \textbf{change request tickets by 90\%} by empowering non-technical users across hundreds of projects via deployment of configurable rate-limiting capabilities backed by hardware usage telemetry.
+        %\item Reduced \textbf{change request tickets by 90\%} by creating a UI integrated with hardware usage reporting. This enabled non-technical managers to modify rate limits across hundreds of Dell projects, \textbf{eliminating manual team effort}.
+        \item Built a distributed Batch Service to process \textbf{50K+ LLM requests}, collaborating with the supply chain team to cut processing time by \textbf{3×} and \textbf{automate decision-making from days to hours}.
+        \item Awarded \textbf{GenAI Champion} nomination for prototyping a RAG chatbot, accelerating internal knowledge sharing and documentation discovery.
 	\end{rSubsection}
 
 %------------------------------------------------
 
-    \textbf{JPMorgan Chase \& Co.} \hfill {Plano, TX} \\ 
-    Risk Forcasting ML
-    
-    \begin{rSubsection}{Machine Learning Engineer}{October 2021 - October 2022}{}{}
-		\item Performed early data analysis and worked with business analysts to understand and evaluate model
-output.
-		\item Worked with data scientists to productionize machine learning models.
-		\item Aggregated and transformed data for machine learning data pipelines.
-		\item Facilitated growth of junior team members with best practices, scoping, and learning new technologies.
-	\end{rSubsection}
+    \textbf{JPMorgan Chase \& Co.} \hfill {Plano, TX } \\
+    \textbf{Machine Learning Engineer}
+    \begin{rSubsection}{Risk Forecasting}{October 2021 -- October 2022}
+        %\item Productionized code for high availability and scalability using data-driven operational excellence initiatives and integrating automated test coverage, achieving \textbf{zero data integrity bugs} in production.
+        \item Developed end-to-end data pipelines \textbf{supporting over 100K records daily}, ingesting, transforming, and \\generating features from multiple data sources.
+        \item Enhanced business analyst workflows, \textbf{cutting analyst work items by 70\%} by conducting early-stage data analysis, automating routine tasks, and adding confidence intervals to help prioritize work items.
+        % \item Mentored junior engineers by promoting engineering best practices and guiding adoption of new \\ technologies.
+    \end{rSubsection}
 
 %------------------------------------------------
 
-    \textbf{Motio, Inc.} \hfill {Plano, TX} \\ 
-    Business Intelligence Reporting Version Control
-    
-    \begin{rSubsection}{Software Engineer}{May 2016 - October 2021}{}{}
-        \item Boosted performance restoring old reports by 100\% by identifying and optimizing costly SQL queries.
-        \item Reduced login time from 2s to 40ms (98\% faster) by optimizing Single Page Application (SPA) resource loading.
-        \item Designed and prototyped delegated authentication, enabling Single Sign On into application regardless of authentication provider.
+    \textbf{Motio, Inc.} \hfill {Plano, TX } \\
+    \textbf{Software Engineer}
+    \begin{rSubsection}{Business Intelligence Reporting Version Control}{May 2016 - October 2021}
+        \item Secured the product’s \textbf{largest customer} by designing and prototyping delegated authentication, enabling \\seamless Single Sign-On across multiple authentication providers.
+        % Designed and prototyped delegated authentication, enabling seamless Single Sign-On across multiple authentication providers, which secured the largest customer for the product.
+        \item Reduced login time from \textbf{2s to 40ms (98\% faster)} by optimizing Single Page Application (SPA) resource loading.
+        \item Boosted \textbf{performance restoring old reports by 100\%} by identifying and optimizing costly SQL queries.
 	\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Projects and Volunteering}
+
+    \begin{rSubsectionB}{RuneLite Open Source Application - Release 1.5.1}{}
+        \item Assisted \textbf{300K active daily users} by implementing an enhancement to the idle notification plugin.
+        % Implemented an enhancement to the idle notification plugin, improving the UX for 300K Active Daily Users.
+        \item Engaged in forums with \textbf{200K users} to identify and scope codebase issues and features.
+    \end{rSubsectionB}
+
+    \begin{rSubsectionB}{Content Search Ranking - JPMC Hackathon}{}
+        \item Led a team project that \textbf{placed in the top 10 city-wide}; impressed judges with enhanced Confluence search accuracy designed to support developer productivity.
+    \end{rSubsectionB}
+
+    \begin{rSubsectionB}{ACM Industry Mentor - UT Dallas}{}
+        \item Mentored \textbf{top 1\% of computer science students} by offering industry insights to support the development of their semester projects.
+    \end{rSubsectionB}
 
 \end{rSection}
 
@@ -96,38 +114,28 @@ output.
 
     %Java, Python, Go, Javascript, SQL, React, Node.js, Kubernetes, Docker, Kafka, Spring, FastAPI, AWS (ECS, Lambda, S3)
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Languages \& Frameworks & Java, Python, Go, Javascript, SQL, Spring, FastAPI, React, Node.js \\
-		% Frameworks & Spring, FastAPI, React, Node.js \\
+		Languages & Java, Python, Go, JavaScript, SQL \\%, Spring, FastAPI, React, Node.js \\
+		Frameworks & Spring, FastAPI, React, Node.js \\
 		Technologies & Kubernetes, Docker, Kafka, AWS (ECS, Lambda, S3) \\
 	\end{tabular}
 
 \end{rSection}
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-	
-    \textbf{University of Texas at Dallas} \hfill {May 2017} \\ 
-    BS in Computer Science
-	
+
+    \textbf{University of Texas at Dallas} \hfill {} \\
+    BS in Computer Science - May 2017\\
+    %BS in Computer Science \\
+    Dean's List %- Fall 2013
+
 \end{rSection}
-
-\begin{rSection}{Extracurricular}
-	
-    \textbf{ACM Industry Mentor - UT Dallas} \hfill {September 2023 - November 2024} \\ 
-    Worked with college students from the University of Texas at Dallas to provide them with industry insight as they
-develop their semester projects.
-
-    \textbf{Content Search Augmentation - JMPC Plano Hackathon Top 10} \hfill {} \\ 
-    Developed a service to scrape Confluence pages and generate vector embeddings with a machine learning model, improving search result accuracy.
-    
-    \textbf{RuneLite OpenSource Application - Release 1.5.1} \hfill {} \\ 
-    Collaborated in developer chat rooms to identify and scope new codebase issues, and implemented a simple enhancement to an existing plugin.
-	
-\end{rSection}
-
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
